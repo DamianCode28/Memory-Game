@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+🧠 Memory Game 
+Inicialización:
+- npm run dev
+- localhost *****/memotest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un juego de memoria (Memotest) desarrollado como práctica de lógica, manejo de estado y experiencia de usuario en el front end.
+El objetivo del juego es encontrar todos los pares de cartas iguales en la menor cantidad de intentos posible, ejercitando la memoria visual del jugador.
 
-Currently, two official plugins are available:
+La aplicación fue desarrollada con React(react-router-dom, utilizando JavaScript para la lógica del juego y CSS para el diseño y las animaciones, logrando una interfaz simple, dinámica y responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎮 ¿Cómo funciona el juego?
 
-## React Compiler
+Al iniciar la partida, las cartas se mezclan de forma aleatoria.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+El jugador puede dar vuelta dos cartas por turno.
 
-## Expanding the ESLint configuration
+Si las cartas coinciden, permanecen visibles.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Si no coinciden, se vuelven a ocultar después de un breve tiempo.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+El juego finaliza cuando todos los pares han sido encontrados.
+<img width="1043" height="793" alt="2" src="https://github.com/user-attachments/assets/a731e1f7-c628-4a12-b93c-d803872fdd15" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+⚙️ Funcionalidades principales
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Mezcla aleatoria de cartas en cada partida.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Control de estados del juego (cartas activas, coincidencias y reinicio).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Posibilidad de reiniciar la partida.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Tecnologías utilizadas
+
+React y Vite para la estructura y el manejo de componentes.
+
+JavaScript para la lógica del juego y control de estados.
+
+CSS para estilos, animaciones y diseño visual.
+
+🚀 Objetivo del proyecto
+
+El objetivo principal de este proyecto fue reforzar conceptos clave de React, como:
+
+Manejo de estado
+
+Renderizado condicional
+
+Comunicación entre componentes
+
+Organización del código
+
+Pensamiento lógico aplicado a un juego interactivo
+
+📌 Estado del proyecto
+
+✔️ Proyecto finalizado
+🔧 Posibles mejoras futuras:
+
+Contador de movimientos
+
+Temporizador
+
+Niveles de dificultad
+
+Ranking de puntuaciones
