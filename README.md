@@ -19,9 +19,10 @@ Si las cartas coinciden, permanecen visibles.
 Si no coinciden, se vuelven a ocultar después de un breve tiempo.
 
 El juego finaliza cuando todos los pares han sido encontrados.
-<img width="1017" height="778" alt="1" src="https://github.com/user-attachments/assets/4d3837c5-9a78-4de8-8f7a-9cb8c1986714" />
-<img width="1037" height="806" alt="3" src="https://github.com/user-attachments/assets/684968b2-b8c3-4941-ac4f-2647a8fbef10" />
-<img width="1043" height="793" alt="2" src="https://github.com/user-attachments/assets/146630e6-6b2d-4ce0-9143-565820237ef1" />
+<img width="300" height="233" alt="3" src="https://github.com/user-attachments/assets/e08d5e85-f143-4f1d-b2b5-296d71ab13ca" />
+
+
+
 
 
 
